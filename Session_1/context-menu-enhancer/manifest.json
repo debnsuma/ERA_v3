@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Context Menu Enhancer",
+  "version": "1.0",
+  "description": "Enhance your browsing experience with useful context menu options.",
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
