@@ -1,0 +1,258 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    width: 400px;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #4a90e2;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 5px; /* Added to reduce space before subtitle */
+}
+
+.subtitle {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+h2 {
+    color: #5cb85c;
+    font-size: 20px;
+}
+
+/* Summary Information Styling */
+.summary-info {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #4a90e2;
+}
+
+.summary-item {
+    margin: 10px 0;
+}
+
+.summary-label {
+    font-size: 16px;
+    color: #666;
+    margin-right: 10px;
+}
+
+.summary-value {
+    font-size: 18px; /* Reduced from 20px */
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+/* Hide the initial duration display */
+#playlist-info {
+    display: none;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#plan-result {
+    margin-top: 20px;
+}
+
+.study-plan-container {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.day-plan {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.day-plan h3 {
+    color: #4a90e2;
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.day-duration {
+    color: #666;
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+.video-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.video-item {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9em;
+    display: flex;
+    align-items: flex-start;
+}
+
+.video-item:last-child {
+    border-bottom: none;
+}
+
+.video-duration {
+    color: #5cb85c;
+    margin-right: 8px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.video-title {
+    color: #333;
+    flex: 1;
+}
+
+/* Scrollbar styling */
+.study-plan-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.study-plan-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.study-plan-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.study-plan-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Add these styles to your existing styles.css */
+
+#export-buttons {
+    margin: 15px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.export-btn {
+    flex: 1;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+.export-btn:hover {
+    background-color: #357abd;
+}
+
+#export-txt {
+    background-color: #5c6bc0;
+}
+
+#export-txt:hover {
+    background-color: #3f51b5;
+}
+
+#export-excel {
+    background-color: #66bb6a;
+}
+
+#export-excel:hover {
+    background-color: #4caf50;
+}
+
+/* Add these new styles to your existing styles.css */
+
+.schedule-options {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.input-group input[type="time"],
+.input-group input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+}
+
+#export-calendar {
+    background-color: #e67e22;
+}
+
+#export-calendar:hover {
+    background-color: #d35400;
+}

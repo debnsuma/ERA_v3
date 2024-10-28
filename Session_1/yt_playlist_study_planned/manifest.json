@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Playlist Study Planner",
+  "version": "1.0",
+  "description": "Calculate total duration of YouTube playlists and create study plans.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

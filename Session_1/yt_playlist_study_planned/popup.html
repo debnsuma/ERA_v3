@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Playlist Study Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Playlist Study Planner</h1>
+        <div class="subtitle">(This extension was built using Amazon Q)</div>
+        <div id="study-plan">
+            <h2>Create Study Plan</h2>
+            <div class="input-group">
+                <label for="daily-time">Daily study time (minutes):</label>
+                <input type="number" id="daily-time" min="1" value="60">
+            </div>
+            
+            <div class="schedule-options">
+                <div class="input-group">
+                    <label for="preferred-time">Preferred study time:</label>
+                    <input type="time" id="preferred-time" value="09:00">
+                </div>
+                
+                <div class="input-group checkbox-group">
+                    <input type="checkbox" id="include-weekends" checked>
+                    <label for="include-weekends">Include weekends</label>
+                </div>
+
+                <div class="input-group">
+                    <label for="start-date">Start date:</label>
+                    <input type="date" id="start-date">
+                </div>
+            </div>
+
+            <button id="generate-plan">Generate Plan</button>
+            
+            <div id="export-buttons" style="display: none;">
+                <button id="export-txt" class="export-btn">Export as TXT</button>
+                <button id="export-excel" class="export-btn">Export as Excel</button>
+                <button id="export-calendar" class="export-btn">Add to Calendar</button>
+            </div>
+            <div id="plan-result"></div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
